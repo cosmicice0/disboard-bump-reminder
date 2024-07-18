@@ -2,9 +2,10 @@
   "name": "disboard-bump-reminder",
   "version": "1.0.0",
   "description": "Remind your server members to bump using this simple discord.js based bot. ",
-  "main": "bot.js",
+  "main": "src/bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "node src/deploy.js",
+    "start": "node src/bot.js"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,12 @@
   "homepage": "https://github.com/cosmicice0/disboard-bump-reminder#readme",
   "dependencies": {
     "discord.js": "^14.15.3",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "node-schedule": "^2.1.1"
   },
   "devDependencies": {
-    "eslint": "^9.6.0"
+    "@eslint/js": "^9.6.0",
+    "eslint": "^9.6.0",
+    "globals": "^15.8.0"
   }
 }
